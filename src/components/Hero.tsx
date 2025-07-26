@@ -41,13 +41,13 @@ const Hero = () => {
                 </span>
               </div>
               
-              <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
-                <span className="block">Abdul Rahim S</span>
+              <h1 className="text-5xl lg:text-7xl font-bold leading-tight text-foreground">
+                <span className="block text-foreground">Abdul Rahim S</span>
                 <span className="portfolio-gradient-text block">Full Stack</span>
-                <span className="block">Python Developer</span>
+                <span className="block text-foreground">Python Developer</span>
               </h1>
               
-              <p className="text-xl text-portfolio-muted max-w-2xl">
+              <p className="text-xl text-foreground/80 max-w-2xl">
                 Enthusiastic <span className="text-accent font-semibold">Full Stack Python Developer</span> & 
                 <span className="text-primary font-semibold"> Data Science Enthusiast</span> with 6 months of hands-on experience. 
                 Combining web development expertise with data-driven insights.
