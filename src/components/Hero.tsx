@@ -69,6 +69,12 @@ const Hero = () => {
                 variant="outline" 
                 size="lg"
                 className="group border-border/50 hover:border-primary/50 hover:bg-primary/10"
+                onClick={() => {
+                  const link = document.createElement('a');
+                  link.href = '/cv.pdf';
+                  link.download = 'Abdul_Rahim_S_CV.pdf';
+                  link.click();
+                }}
               >
                 <Download className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
                 Download CV

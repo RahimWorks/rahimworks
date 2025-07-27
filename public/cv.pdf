@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="https://tiiny.host/pdf-ui/favicon.ico" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Abdul-Rahim" />
+    <title>Abdul-Rahim</title>
+    <script rel="preload" defer src="https://assets.tiiny.xyz/pdf-ui/static/js/main.js"></script>
+    <link href="https://assets.tiiny.xyz/pdf-ui/static/css/main.css" rel="stylesheet" />
+
+    <!-- <script rel="preload" defer src="https://tiiny.host/pdf-ui-dev/static/js/main.js"></script>
+    <link href="https://tiiny.host/pdf-ui-dev/static/css/main.css" rel="stylesheet"> -->
+
+    <script>
+      window.fileName = 'Abdul-Rahim.pdf';
+      window.licenseKey = '{{LIC_KEY}}';
+      window.configuration = `{"disableToolbarOptions":[],"presentationMode":false}`;
+    </script>
+    <script type="text/javascript" src="https://tiiny.host/ad-script.js"></script>
+  <script defer data-domain="rahimcv.tiiny.site" src="https://analytics.tiiny.site/js/plausible.js"></script><script type="text/javascript" src="https://tiiny.host/ad-script.js"></script></head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
