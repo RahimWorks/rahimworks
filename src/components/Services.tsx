@@ -2,96 +2,51 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Globe, Database, BarChart3, Smartphone, Shield, Zap } from "lucide-react";
-
 const Services = () => {
-  const services = [
-    {
-      icon: Globe,
-      title: "Full Stack Web Development",
-      description: "End-to-end web application development using modern technologies like Python, Django, React, and Angular.",
-      features: [
-        "Responsive Web Design",
-        "RESTful API Development",
-        "Database Integration",
-        "User Authentication",
-        "Performance Optimization"
-      ],
-      price: "Starting from ₹25,000"
-    },
-    {
-      icon: Smartphone,
-      title: "E-commerce Solutions",
-      description: "Custom e-commerce platforms tailored for small businesses, artisans, and traditional craftspeople.",
-      features: [
-        "Product Catalog Management",
-        "Shopping Cart & Checkout",
-        "Payment Gateway Integration",
-        "Order Management System",
-        "Admin Dashboard"
-      ],
-      price: "Starting from ₹35,000"
-    },
-    {
-      icon: BarChart3,
-      title: "Data Analysis & Visualization",
-      description: "Transform your business data into actionable insights with custom analytics and interactive dashboards.",
-      features: [
-        "Data Processing & Cleaning",
-        "Statistical Analysis",
-        "Interactive Dashboards",
-        "Custom Reports",
-        "Predictive Analytics"
-      ],
-      price: "Starting from ₹15,000"
-    },
-    {
-      icon: Database,
-      title: "Database Design & Management",
-      description: "Efficient database architecture and management solutions for optimal data storage and retrieval.",
-      features: [
-        "Database Schema Design",
-        "Query Optimization",
-        "Data Migration",
-        "Backup Solutions",
-        "Performance Tuning"
-      ],
-      price: "Starting from ₹20,000"
-    },
-    {
-      icon: Zap,
-      title: "Web Scraping & Automation",
-      description: "Automated data collection and web scraping solutions to streamline your business processes.",
-      features: [
-        "Custom Web Scrapers",
-        "Data Extraction Tools",
-        "Process Automation",
-        "API Integration",
-        "Scheduled Tasks"
-      ],
-      price: "Starting from ₹12,000"
-    },
-    {
-      icon: Shield,
-      title: "Website Maintenance & Support",
-      description: "Ongoing support and maintenance to keep your web applications running smoothly and securely.",
-      features: [
-        "Regular Updates",
-        "Security Monitoring",
-        "Bug Fixes",
-        "Performance Monitoring",
-        "Technical Support"
-      ],
-      price: "Starting from ₹8,000/month"
-    }
-  ];
-
+  const services = [{
+    icon: Globe,
+    title: "Full Stack Web Development",
+    description: "End-to-end web application development using modern technologies like Python, Django, React, and Angular.",
+    features: ["Responsive Web Design", "RESTful API Development", "Database Integration", "User Authentication", "Performance Optimization"],
+    price: "Starting from ₹25,000"
+  }, {
+    icon: Smartphone,
+    title: "E-commerce Solutions",
+    description: "Custom e-commerce platforms tailored for small businesses, artisans, and traditional craftspeople.",
+    features: ["Product Catalog Management", "Shopping Cart & Checkout", "Payment Gateway Integration", "Order Management System", "Admin Dashboard"],
+    price: "Starting from ₹35,000"
+  }, {
+    icon: BarChart3,
+    title: "Data Analysis & Visualization",
+    description: "Transform your business data into actionable insights with custom analytics and interactive dashboards.",
+    features: ["Data Processing & Cleaning", "Statistical Analysis", "Interactive Dashboards", "Custom Reports", "Predictive Analytics"],
+    price: "Starting from ₹15,000"
+  }, {
+    icon: Database,
+    title: "Database Design & Management",
+    description: "Efficient database architecture and management solutions for optimal data storage and retrieval.",
+    features: ["Database Schema Design", "Query Optimization", "Data Migration", "Backup Solutions", "Performance Tuning"],
+    price: "Starting from ₹20,000"
+  }, {
+    icon: Zap,
+    title: "Web Scraping & Automation",
+    description: "Automated data collection and web scraping solutions to streamline your business processes.",
+    features: ["Custom Web Scrapers", "Data Extraction Tools", "Process Automation", "API Integration", "Scheduled Tasks"],
+    price: "Starting from ₹12,000"
+  }, {
+    icon: Shield,
+    title: "Website Maintenance & Support",
+    description: "Ongoing support and maintenance to keep your web applications running smoothly and securely.",
+    features: ["Regular Updates", "Security Monitoring", "Bug Fixes", "Performance Monitoring", "Technical Support"],
+    price: "Starting from ₹8,000/month"
+  }];
   const scrollToContact = () => {
     const element = document.getElementById('contact');
-    element?.scrollIntoView({ behavior: 'smooth' });
+    element?.scrollIntoView({
+      behavior: 'smooth'
+    });
   };
-
-  return (
-    <section id="services" className="portfolio-section bg-portfolio-darker">
+  return <section id="services" className="portfolio-section bg-portfolio-darker">
       <div className="portfolio-container">
         <div className="text-center mb-16">
           <Badge variant="outline" className="mb-4 border-primary/30 text-primary">
@@ -137,8 +92,7 @@ const Services = () => {
 
         {/* Services Grid */}
         <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-8">
-          {services.map((service, index) => (
-            <Card key={service.title} className="portfolio-card group">
+          {services.map((service, index) => <Card key={service.title} className="portfolio-card group">
               <CardContent className="p-6 h-full flex flex-col">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="p-3 bg-gradient-primary rounded-lg group-hover:scale-110 transition-transform">
@@ -154,29 +108,21 @@ const Services = () => {
                 <div className="space-y-3 mb-6">
                   <h4 className="font-semibold text-sm text-primary">Key Features:</h4>
                   <ul className="space-y-1">
-                    {service.features.map((feature) => (
-                      <li key={feature} className="text-sm text-portfolio-muted flex items-center gap-2">
+                    {service.features.map(feature => <li key={feature} className="text-sm text-portfolio-muted flex items-center gap-2">
                         <div className="w-1 h-1 bg-accent rounded-full"></div>
                         {feature}
-                      </li>
-                    ))}
+                      </li>)}
                   </ul>
                 </div>
 
                 <div className="mt-auto space-y-4">
-                  <div className="text-center py-2 bg-secondary/30 rounded-lg">
-                    <span className="text-lg font-bold text-accent">{service.price}</span>
-                  </div>
-                  <Button 
-                    className="w-full bg-gradient-primary hover:shadow-glow"
-                    onClick={scrollToContact}
-                  >
+                  
+                  <Button className="w-full bg-gradient-primary hover:shadow-glow" onClick={scrollToContact}>
                     Get Quote
                   </Button>
                 </div>
               </CardContent>
-            </Card>
-          ))}
+            </Card>)}
         </div>
 
         {/* Value Proposition */}
@@ -210,11 +156,7 @@ const Services = () => {
               </div>
 
               <div className="flex justify-center mt-8">
-                <Button 
-                  size="lg" 
-                  className="bg-gradient-primary hover:shadow-glow"
-                  onClick={scrollToContact}
-                >
+                <Button size="lg" className="bg-gradient-primary hover:shadow-glow" onClick={scrollToContact}>
                   Start Your Project
                 </Button>
               </div>
@@ -222,8 +164,6 @@ const Services = () => {
           </CardContent>
         </Card>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Services;
