@@ -83,7 +83,7 @@ const Contact = () => {
       // Send email using EmailJS
       await emailjs.send(
         'service_bz0wfvh', // Service ID
-        'template_uhhid44', // Template ID
+        'template_v6je5eg', // Template ID
         {
           from_name: formData.name,
           from_email: formData.email,
