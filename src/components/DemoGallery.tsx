@@ -3,13 +3,13 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } f
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 
-// Import the new images
-import handiqueHomepage from "@/assets/handique-homepage.png";
-import handiqueCategories from "@/assets/handique-categories.png";
-import handiqueProducts from "@/assets/handique-products.png";
-import handiqueCart from "@/assets/handique-cart.png";
-import handiqueLogin from "@/assets/handique-login.png";
-import handiqueRegister from "@/assets/handique-register.png";
+// Import the updated images
+import handiqueHomepage from "/lovable-uploads/fcae573d-c0fb-4532-93bf-ce80325705d6.png";
+import handiqueCategories from "/lovable-uploads/c0df9241-4b1d-4ff5-8234-ca5ba247e0be.png";
+import handiqueProducts from "/lovable-uploads/6c85703a-85bc-40c1-a589-6e80ad626958.png";
+import handiqueCart from "/lovable-uploads/a2e24750-ca42-46db-abde-440fa78d30e0.png";
+import handiqueLogin from "/lovable-uploads/cdb11d43-0db6-46c8-8c68-1b0f47b0f8e5.png";
+import handiqueRegister from "/lovable-uploads/67783395-80b7-4cae-9972-72d43927d7c1.png";
 
 interface DemoGalleryProps {
   isOpen: boolean;
@@ -100,7 +100,7 @@ const DemoGallery = ({ isOpen, onClose }: DemoGalleryProps) => {
             <img
               src={screenshots[currentSlide].image}
               alt={screenshots[currentSlide].title}
-              className="max-w-full max-h-full object-contain rounded-lg shadow-lg"
+              className="w-full h-full object-contain rounded-lg shadow-lg"
             />
             
             {/* Navigation Arrows */}
