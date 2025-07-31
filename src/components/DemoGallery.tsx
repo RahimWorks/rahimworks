@@ -3,6 +3,14 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } f
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 
+// Import the new images
+import handiqueHomepage from "@/assets/handique-homepage.png";
+import handiqueCategories from "@/assets/handique-categories.png";
+import handiqueProducts from "@/assets/handique-products.png";
+import handiqueCart from "@/assets/handique-cart.png";
+import handiqueLogin from "@/assets/handique-login.png";
+import handiqueRegister from "@/assets/handique-register.png";
+
 interface DemoGalleryProps {
   isOpen: boolean;
   onClose: () => void;
@@ -14,37 +22,37 @@ const DemoGallery = ({ isOpen, onClose }: DemoGalleryProps) => {
   const screenshots = [
     {
       id: 1,
-      image: "/lovable-uploads/533c5a55-1af2-497d-9391-6d3203e77ff3.png",
+      image: handiqueHomepage,
       title: "Homepage",
       description: "Main landing page showcasing HandiQue's unique handcrafted treasures"
     },
     {
       id: 2,
-      image: "/lovable-uploads/2fee1f4f-d0fd-496f-9877-04fa8dc0d537.png",
+      image: handiqueCategories,
       title: "Categories",
       description: "Browse by category - Jewelry, Home Decor, and Art collections"
     },
     {
       id: 3,
-      image: "/lovable-uploads/7632cb46-113a-4b60-93a7-989df993ef99.png",
+      image: handiqueProducts,
       title: "Product Listing",
       description: "Featured products including Tea Cup Wire Wall Hanging, Turtle Plant Pot, and Bow Earring"
     },
     {
       id: 4,
-      image: "/lovable-uploads/9b9555aa-9844-4fe8-992b-284ced38e222.png",
+      image: handiqueCart,
       title: "Shopping Cart",
       description: "Complete shopping cart functionality with item management and checkout"
     },
     {
       id: 5,
-      image: "/lovable-uploads/d95e8936-1e27-44aa-85da-b6b82f0254f3.png",
+      image: handiqueLogin,
       title: "User Login",
       description: "Secure user authentication with clean, modern interface"
     },
     {
       id: 6,
-      image: "/lovable-uploads/b02e524f-0eb1-4402-bee4-41c8dab4d4e1.png",
+      image: handiqueRegister,
       title: "Registration",
       description: "User-friendly registration process for new HandiQue customers"
     }
