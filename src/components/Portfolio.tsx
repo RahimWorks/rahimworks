@@ -1,10 +1,13 @@
+import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github, ShoppingCart, Users, Database, Smartphone } from "lucide-react";
 import handiqueProject from "@/assets/handique-project.jpg";
+import DemoGallery from "./DemoGallery";
 
 const Portfolio = () => {
+  const [isDemoOpen, setIsDemoOpen] = useState(false);
   const projectFeatures = [
     {
       icon: Users,
@@ -81,6 +84,7 @@ const Portfolio = () => {
                     variant="secondary" 
                     size="sm"
                     className="bg-white/20 border-white/30 text-white hover:bg-white/30"
+                    onClick={() => setIsDemoOpen(true)}
                   >
                     <ExternalLink className="h-4 w-4 mr-2" />
                     Live Demo
@@ -211,6 +215,12 @@ const Portfolio = () => {
             </div>
           </CardContent>
         </Card>
+
+        {/* Demo Gallery Modal */}
+        <DemoGallery 
+          isOpen={isDemoOpen} 
+          onClose={() => setIsDemoOpen(false)} 
+        />
       </div>
     </section>
   );
