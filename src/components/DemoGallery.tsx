@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 
@@ -67,9 +67,14 @@ const DemoGallery = ({ isOpen, onClose }: DemoGalleryProps) => {
       <DialogContent className="max-w-6xl w-full h-[90vh] p-0 overflow-hidden">
         <DialogHeader className="p-6 pb-0">
           <div className="flex items-center justify-between">
-            <DialogTitle className="text-2xl font-bold text-primary">
-              HandiQue Live Demo - {screenshots[currentSlide].title}
-            </DialogTitle>
+            <div>
+              <DialogTitle className="text-2xl font-bold text-primary">
+                HandiQue Live Demo - {screenshots[currentSlide].title}
+              </DialogTitle>
+              <DialogDescription className="text-portfolio-muted mt-1">
+                Interactive showcase of the HandiQue e-commerce platform features
+              </DialogDescription>
+            </div>
             <Button 
               variant="ghost" 
               size="sm" 
