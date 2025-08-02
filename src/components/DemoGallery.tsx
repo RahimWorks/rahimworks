@@ -72,7 +72,7 @@ const DemoGallery = ({ isOpen, onClose }: DemoGalleryProps) => {
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-[95vw] max-h-[95vh] w-fit h-fit p-4 overflow-auto">
+      <DialogContent className="max-w-[90vw] max-h-[90vh] w-fit h-fit p-4">
         <div className="flex justify-between items-center mb-4">
           <div className="flex gap-4 items-center">
             <Button
@@ -110,7 +110,7 @@ const DemoGallery = ({ isOpen, onClose }: DemoGalleryProps) => {
           <img
             src={screenshots[currentSlide].image}
             alt={screenshots[currentSlide].title}
-            className="max-w-none"
+            className="max-w-[80vw] max-h-[70vh] object-contain"
           />
         </div>
       </DialogContent>
