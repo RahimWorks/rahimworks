@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github, ShoppingCart, Users, Database, Smartphone } from "lucide-react";
-import handiqueProject from "@/assets/handique-project.jpg";
+import handiqueProject from "/lovable-uploads/946f606c-a951-479c-a90c-7c6a46a9f6d7.png";
 import DemoGallery from "./DemoGallery";
 
 const Portfolio = () => {
