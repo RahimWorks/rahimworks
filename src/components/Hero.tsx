@@ -49,7 +49,7 @@ const Hero = () => {
               
               <p className="text-xl text-foreground/80 max-w-2xl">
                 Enthusiastic <span className="text-accent font-semibold">Full Stack Python Developer</span> & 
-                <span className="text-primary font-semibold"> Data Science Enthusiast</span> with 6 months of hands-on experience. 
+                <span className="text-primary font-semibold"> Data Science Enthusiast</span> with 1 year of hands-on experience.
                 Combining web development expertise with data-driven insights.
               </p>
             </div>
