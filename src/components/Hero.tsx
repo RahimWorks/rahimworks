@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Download, Github, Linkedin, Instagram, Mail } from "lucide-react";
+import { ArrowDown, Download, Github, Instagram, Mail } from "lucide-react";
 import profileImage from "@/assets/profile-image.jpg";
 
 const Hero = () => {
@@ -11,7 +11,6 @@ const Hero = () => {
   const socialLinks = [
     { icon: Mail, href: "mailto:rahimrahi694@gmail.com", label: "Email" },
     { icon: Github, href: "#", label: "GitHub" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
     { icon: Instagram, href: "https://instagram.com/_rahi_rahi_", label: "Instagram" },
   ];
 
