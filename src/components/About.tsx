@@ -14,7 +14,7 @@ const About = () => {
       icon: Briefcase,
       title: "Experience",
       description: "Python Development Internship",
-      detail: "Right Soft Options, Kochi (6 months)"
+      detail: "Right Soft Options, Kochi (1 year)"
     },
     {
       icon: Code,
@@ -58,7 +58,7 @@ const About = () => {
               </p>
               
               <p className="text-portfolio-muted leading-relaxed">
-                My transition into technology began with a <span className="text-accent font-medium">6-month Python development internship</span> at 
+                My transition into technology began with a <span className="text-accent font-medium">1-year Python development internship</span> at 
                 Right Soft Options, Kochi, where I gained hands-on experience in both web development and data science. 
                 This experience has shaped my approach to creating <span className="text-primary font-medium">efficient, scalable applications</span> that 
                 solve real-world problems.
