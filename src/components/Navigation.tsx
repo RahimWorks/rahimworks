@@ -89,6 +89,9 @@ const Navigation = () => {
             <Button 
               size="sm" 
               className="bg-gradient-primary hover:shadow-glow"
+              onClick={() => {
+                window.open('https://www.dropbox.com/scl/fi/02hmwo0fqt2lkj8pis9vq/Abdul-Rahim-S-1.pdf?rlkey=e3izo6zbuqh0erx2f1jmnp56b&st=kzfise7d&dl=1', '_blank');
+              }}
             >
               <Download className="h-4 w-4 mr-2" />
               Resume
@@ -127,6 +130,9 @@ const Navigation = () => {
                 <Button 
                   size="sm" 
                   className="w-full bg-gradient-primary hover:shadow-glow"
+                  onClick={() => {
+                    window.open('https://www.dropbox.com/scl/fi/02hmwo0fqt2lkj8pis9vq/Abdul-Rahim-S-1.pdf?rlkey=e3izo6zbuqh0erx2f1jmnp56b&st=kzfise7d&dl=1', '_blank');
+                  }}
                 >
                   <Download className="h-4 w-4 mr-2" />
                   Download Resume
