@@ -69,7 +69,7 @@ const Hero = () => {
                 size="lg"
                 className="group border-border/50 hover:border-primary/50 hover:bg-primary/10"
                 onClick={() => {
-                  window.open('https://www.dropbox.com/scl/fi/jcs8lu84mm3k48gf717g0/Rahim-resume.pdf?rlkey=kcp9ubrzuy2z65lo4bzzghvqi&st=82syl6pe&dl=1', '_blank');
+                  window.open('https://www.dropbox.com/scl/fi/02hmwo0fqt2lkj8pis9vq/Abdul-Rahim-S-1.pdf?rlkey=e3izo6zbuqh0erx2f1jmnp56b&st=kzfise7d&dl=1', '_blank');
                 }}
               >
                 <Download className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
